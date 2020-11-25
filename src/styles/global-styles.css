@@ -11,6 +11,9 @@ html {
   background-size: 450px;
   font-size: 14px;
 }
-.MuiButton-root {
-  border-radius: 8px;
-} 
+.buttons-panel {
+  width: 400px;
+}
+/* .columns {
+  display: flex
+} */

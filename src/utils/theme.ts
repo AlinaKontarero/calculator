@@ -12,10 +12,10 @@ const theme = createMuiTheme({
     },
     secondary: {
       light: '#607D8B',
-      main: '#757575',
+      main: '#323232',
       dark: '#212121',
       contrastText: '#BDBDBD',
-    },
+    }
   },
   overrides: {
     MuiButton: {
