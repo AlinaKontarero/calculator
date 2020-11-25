@@ -1,0 +1,16 @@
+:root {
+  --red: #FF4949;
+  --black: #2E2E2E;
+  --yellow: #ffc600;
+  --white: #fff;
+  --grey: #efefef;
+}
+html {
+  background-color: var(--black);
+  color: var(--white);
+  background-size: 450px;
+  font-size: 14px;
+}
+.MuiButton-root {
+  border-radius: 8px;
+} 
