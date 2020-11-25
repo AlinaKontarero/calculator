@@ -1,13 +1,13 @@
 import * as React from 'react'
 
 interface Props {
-  result: number
+  result: string
 }
 
 const ResultPanel= (props: Props) =>  {
   return (
-    <div>
-      <p> {props.result} </p> 
+    <div className='column is-full'>
+      <p className='result'> {props.result} </p> 
     </div>
   );
 }

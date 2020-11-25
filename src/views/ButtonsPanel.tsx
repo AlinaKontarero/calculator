@@ -2,7 +2,7 @@ import * as React from 'react'
 import Button from '@material-ui/core/Button/Button';
 import clsx from 'clsx';
 interface Props {
-  calculate: (e: any) => void
+  onClick: (e: any) => void
 }
 class ButtonsPanel extends React.Component<Props, never> {
 
@@ -12,7 +12,7 @@ class ButtonsPanel extends React.Component<Props, never> {
           <div key={index} className={clsx('column', _button === '0' ? 'is-half' : 'is-one-quarter')}>
              <Button 
                variant='contained'
-               onClick={() => this.props.calculate(_button)}
+               onClick={() => this.props.onClick(_button)}
                color={Number.isInteger(parseInt(_button)) || _button === '.' 
                ? 'secondary' 
                : (index > 14 && index < 18 
@@ -36,7 +36,7 @@ class ButtonsPanel extends React.Component<Props, never> {
         }
 
         return (
-            <div className='column is-4 buttons-panel'>
+            <div className='column is-3 buttons-panel'>
               <div className="columns is-variable is-2" >
               {splitIntoColumns(5)}
             </div>
