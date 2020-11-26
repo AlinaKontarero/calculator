@@ -23,6 +23,12 @@ const theme = createMuiTheme({
         borderRadius: 8,
         // height: 40,
         // width: 20
+        
+      },
+    },
+    MuiTooltip: {
+      tooltip: {
+        fontSize: 12,
       }
     }
   }

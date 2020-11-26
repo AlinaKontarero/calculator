@@ -7,20 +7,19 @@
 }
 html {
   background-color: var(--black);
+  margin-top: 50px;
   color: var(--white);
   background-size: 450px;
   font-size: 14px;
 }
-.buttons-panel {
+/* .buttons-panel {
   width: 400px;
-}
+} */
 .result {
   color: var(--white);
-  font-weight: 400;
   font-size: 40px;
   font-family: 'Helvetica';
   text-align: right;
 }
-/* .columns {
-  display: flex
-} */
+
+

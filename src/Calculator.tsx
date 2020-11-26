@@ -12,7 +12,7 @@ interface State {
 class Calculator extends React.Component<{}, State> {
   constructor(props: any) {
     super(props)
-    this.state = { result: '' }
+    this.state = { result: '0' }
   }
 
   private backspace = () => this.setState({
@@ -57,9 +57,10 @@ private onClick = (_button: string) => {
 
     return (
       <ThemeProvider theme={theme}>
-        <h1>Calculator</h1>
-        <ResultPanel result={this.state.result} />
-        <ButtonsPanel onClick={this.onClick} />
+        <div className='columns is-multiline calculator'>
+          <ResultPanel result={this.state.result} />
+          <ButtonsPanel onClick={this.onClick} />
+       </div> 
       </ThemeProvider>
     );
   }
