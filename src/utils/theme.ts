@@ -15,12 +15,18 @@ const theme = createMuiTheme({
       main: '#323232',
       dark: '#212121',
       contrastText: '#BDBDBD',
+    },
+    action: {
+      disabled: '#607D8B',
+      disabledBackground: '#212121'
     }
   },
   overrides: {
     MuiButton: {
       root: {
-        borderRadius: 8,
+        // borderRadius: '50%',
+        // width: '15px',
+        // height: '60px'
         // height: 40,
         // width: 20
         

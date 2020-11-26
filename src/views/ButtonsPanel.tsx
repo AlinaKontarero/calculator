@@ -19,7 +19,8 @@ class ButtonsPanel extends React.Component<Props, never> {
                   variant='contained'
                   color='secondary'
                   fullWidth={true}
-                  // disabled={true}
+                  disabled={true}
+                  size='large'
                 >
                 {_button}
               </Button>
@@ -27,19 +28,22 @@ class ButtonsPanel extends React.Component<Props, never> {
               </Tooltip>
            </div>
         ))
-        const buttonsLabels = ['0', '.', '=', '1', '2', '3', '+',  '4', '5', '6', '-', '7', '8', '9', 'x', 'C', '+/-', '%', '=']
+        const buttonsLabels = ['0', '.', '=', '1', '2', '3', '+',  '4', '5', '6', '-', '7', '8', '9', '*', 'C', '+/-', '%', '=']
         const buttonsArr = buttonsLabels.map((_button, index) => (
-          <div key={index} className={clsx('column', _button === '0' ? 'is-half' : 'is-one-quarter')}>
+          <div key={index} className={clsx('column', _button === '0' ? 'is-6' : 'is-narrow')}>
              <Button 
-               variant='contained'
-               onClick={() => this.props.onClick(_button)}
-               color={Number.isInteger(parseInt(_button)) || _button === '.' 
-               ? 'secondary' 
-               : (index > 14 && index < 18 
+                // className='round'
+                disableElevation
+                variant='contained'
+                onClick={() => this.props.onClick(_button)}
+                color={Number.isInteger(parseInt(_button)) || _button === '.' 
+                ? 'secondary' 
+                : (index > 14 && index < 18 
                   ? 'inherit' 
                   : 'primary')
               }
                fullWidth={true}
+               size='large'
              >
               {_button}
             </Button>
@@ -49,7 +53,7 @@ class ButtonsPanel extends React.Component<Props, never> {
         const splitIntoColumns = (buttonsArr: JSX.Element[], lineIndex: number, buttonsInLine: number) => {
           const firstButtonIndex: number = lineIndex === 1 
           ?  0
-          : (lineIndex - 1) * 4 - 1;
+          : (lineIndex - 1) * buttonsInLine - 1;
           const lastButtonIndex: number = firstButtonIndex + buttonsInLine;
           return buttonsArr.slice(firstButtonIndex, lastButtonIndex)
         }

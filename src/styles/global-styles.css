@@ -1,7 +1,5 @@
 :root {
-  --red: #FF4949;
   --black: #000;
-  --yellow: #ffc600;
   --white: #fff;
   --grey: #efefef;
 }
@@ -22,4 +20,10 @@ html {
   text-align: right;
 }
 
+.calculator {
+  max-width: 1000px
+}
 
+.round {
+  border-radius: 50%;
+}
