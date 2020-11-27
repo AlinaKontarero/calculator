@@ -2,6 +2,7 @@ import * as React from 'react'
 import { ThemeProvider } from '@material-ui/core/styles'
 import ResultPanel from './views/ResultPanel'
 import ButtonsPanel from './views/ButtonsPanel'
+import ScientificPanel from './views/ScientificPanel'
 import theme from './utils/theme'
 import './styles/global-styles.css'
 
@@ -67,10 +68,13 @@ private onClick = (_buttonValue: string) => {
   public render() {
     return (
       <ThemeProvider theme={theme}>
-        <div className='columns is-multiline calculator'>
+        <div className='panel'> 
           <ResultPanel result={this.state.result} />
-          <ButtonsPanel onClick={this.onClick} />
-       </div> 
+          <div className='grid-container calculator'>
+            <ScientificPanel />
+            <ButtonsPanel onClick={this.onClick} />
+        </div> 
+        </div>
       </ThemeProvider>
     );
   }

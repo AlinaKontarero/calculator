@@ -20,10 +20,39 @@ html {
   text-align: right;
 }
 
-.calculator {
-  max-width: 1000px
+.grid-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-gap: 10px;
 }
 
-.round {
-  border-radius: 50%;
+.calculator {
+  max-width: 100%;
+}
+.grid-element {
+  /* padding: 5px; */
+}
+
+.zero-button {
+  grid-column: span 2;
+}
+
+.scientific-panel {
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 500px;
+}
+
+.main-panel {
+  width: 290px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 768px) {
+  .scientific-panel {
+    display: none;
+  }
+}
+
+.panel {
+  width: 790px;
 }

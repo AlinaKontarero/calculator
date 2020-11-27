@@ -24,12 +24,7 @@ const theme = createMuiTheme({
   overrides: {
     MuiButton: {
       root: {
-        // borderRadius: '50%',
-        // width: '15px',
-        // height: '60px'
-        // height: 40,
-        // width: 20
-        
+        borderRadius: 16,       
       },
     },
     MuiTooltip: {
