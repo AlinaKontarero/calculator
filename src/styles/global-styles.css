@@ -5,14 +5,12 @@
 }
 html {
   background-color: var(--black);
-  margin-top: 50px;
   color: var(--white);
-  background-size: 450px;
   font-size: 14px;
+  width: 790px;
+  margin: 0 auto;
 }
-/* .buttons-panel {
-  width: 400px;
-} */
+
 .result {
   color: var(--white);
   font-size: 40px;
@@ -28,9 +26,6 @@ html {
 
 .calculator {
   max-width: 100%;
-}
-.grid-element {
-  /* padding: 5px; */
 }
 
 .zero-button {
@@ -54,5 +49,5 @@ html {
 }
 
 .panel {
-  width: 790px;
+
 }

@@ -1,10 +1,5 @@
 import * as React from 'react'
 import Button from '@material-ui/core/Button/Button';
-import clsx from 'clsx';
-import Tooltip from '@material-ui/core/Tooltip/Tooltip';
-import Zoom from '@material-ui/core/Zoom/Zoom';
-import splitIntoColumns from '../utils/splitIntoColumns'
-// import { Tooltip } from '@material-ui/core';
 interface Props {
   onClick: (e: any) => void
 }
