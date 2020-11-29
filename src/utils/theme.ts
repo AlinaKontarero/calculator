@@ -24,7 +24,10 @@ const theme = createMuiTheme({
   overrides: {
     MuiButton: {
       root: {
-        borderRadius: 16,       
+        minHeight: 60,
+        borderRadius: 25,     
+        fontSize: 20,
+        fontFamily: 'Open Sans'
       },
     },
     MuiTooltip: {

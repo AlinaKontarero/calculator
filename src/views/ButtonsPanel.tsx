@@ -6,8 +6,11 @@ interface Props {
 class ButtonsPanel extends React.Component<Props, never> {
     render() {
       const buttonsLabels = ['C', '+/-', '%', '/', '7', '8', '9', '*', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '=']
-      const buttonsArr = buttonsLabels.map((_button, index) => (
-        <div key={index} className={_button === '0' ? 'zero-button' : ''}>
+      const buttonsArr = buttonsLabels.map((_button, index) => {
+        const buttonLabel: string = _button === '*' ? 'x' : _button;
+        const isZeroButton: boolean = _button === '0' 
+        return (
+          <div key={index} className={isZeroButton ? 'zero-button' : ''}>
             <Button 
               disableElevation
               variant='contained'
@@ -18,14 +21,14 @@ class ButtonsPanel extends React.Component<Props, never> {
                 ? 'default' 
                 : 'primary')
             }
-              fullWidth={true}
-              size='large'
+              style={isZeroButton ? {}: { borderRadius: '50%', minWidth: 60}}
+              fullWidth={isZeroButton}
             >
-            {_button}
+            {buttonLabel}
           </Button>
           </div>
-      ))
-
+        )}
+      )
 
       return (
         <div className='grid-container main-panel'>
