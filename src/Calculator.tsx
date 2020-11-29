@@ -68,7 +68,7 @@ private onClick = (_buttonValue: string) => {
   public render() {
     return (
       <ThemeProvider theme={theme}>
-        <div className='panel'> 
+        <div className='grid-container panel'> 
           <ResultPanel result={this.state.result} />
           <div className='grid-container calculator'>
             <ScientificPanel />

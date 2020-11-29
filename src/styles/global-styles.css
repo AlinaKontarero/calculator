@@ -7,25 +7,39 @@ html {
   background-color: var(--black);
   color: var(--white);
   font-size: 14px;
-  width: 790px;
+  width: 770px;
   margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.result {
-  color: var(--white);
-  font-size: 40px;
-  font-family: 'Helvetica';
-  text-align: right;
+.panel {
+  grid-template-rows: 100px 350px;
 }
 
 .grid-container {
+  justify-content: center;
   display: grid;
-  grid-template-columns: 5fr 2fr;
   grid-gap: 10px;
 }
 
+.result-panel {
+
+}
+
+
+.result {
+  color: var(--white);
+  font-size: 45px;
+  text-align: right;
+  margin-block-end: auto;
+  overflow: hidden;
+}
+
+
 .calculator {
+  grid-template-columns: 5fr 2fr;
   max-width: 100%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .zero-button {
@@ -38,7 +52,7 @@ html {
 }
 
 .main-panel {
-  width: 290px;
+  width: 250px;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -46,8 +60,7 @@ html {
   .scientific-panel {
     display: none;
   }
-}
-
-.panel {
-
+  .result-panel {
+    width: 250px;
+  }
 }
