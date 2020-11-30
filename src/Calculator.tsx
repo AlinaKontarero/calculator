@@ -16,7 +16,7 @@ class Calculator extends React.Component<{}, State> {
     this.state = { result: '' }
   }
 
-  private backspace = () => this.setState({
+  private removeChar = () => this.setState({
     result: this.state.result.slice(0, -1)
   })
 
@@ -39,23 +39,23 @@ class Calculator extends React.Component<{}, State> {
 };
 
 private addValue = (_value: string) => {
-  const numRegex = /^[0-9]*$/;
-  const isNumericalValue: boolean = !!_value.match(numRegex)
-  const zeroAtBeginning: boolean = this.state.result.length === 1 && 
-    this.state.result[0] === '0' && isNumericalValue
+  // const numRegex = /^[0-9]*$/;
+  // // const isNumericalValue: boolean = !!_value.match(numRegex)
+  // const zeroAtBeginning: boolean = this.state.result.length === 1 && 
+  //   this.state.result[0] === '0' // && isNumericalValue
 
-  if(zeroAtBeginning) {
-    this.setState({ result: _value })
-    } else {
+  // if(zeroAtBeginning) {
+    // this.setState({ result: _value })
+    // } else {
       this.setState({
         result: this.state.result + _value
     })
-  }
+  // }
 }
 
 private onClick = (_buttonValue: string) => {
   if(_buttonValue === 'C') {
-    this.backspace()
+    this.removeChar()
   } else if(_buttonValue === '=') {
     this.calculate()
   } else if(_buttonValue === '+/-') {
