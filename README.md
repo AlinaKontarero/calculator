@@ -1,4 +1,4 @@
-# Easy calculator technical test
+# Calculator 
 
 ## Start with the app
 
