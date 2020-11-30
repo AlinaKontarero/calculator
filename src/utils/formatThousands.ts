@@ -1,5 +1,8 @@
-const formatter = Intl.NumberFormat('nb-NO');
+const formatter = Intl.NumberFormat('nb-NO', {
+  useGrouping: true,
+  maximumFractionDigits: 6
+});
 
-export default function formatThousands(result: number) {
-  return formatter.format(result);
+export default function formatThousands(value: string) {
+  return formatter.format(parseFloat(value));
 }
