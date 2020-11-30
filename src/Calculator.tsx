@@ -130,7 +130,6 @@ class Calculator extends React.Component<{}, State> {
     }
   };
 
-
   public render() {
     return (
       <ThemeProvider theme={theme}>
@@ -139,7 +138,7 @@ class Calculator extends React.Component<{}, State> {
           <div className='grid-container calculator'>
             <ScientificPanel />
             <ButtonsPanel onClick={this.handleCalculation} />
-        </div> 
+          </div> 
         </div>
       </ThemeProvider>
     );
