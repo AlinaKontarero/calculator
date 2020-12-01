@@ -10,3 +10,5 @@ Runs the app in the development mode (on your basic localhost). Be sure you run 
 
 ### Test the app: `npm test`
 
+## Page deployed on AWS
+[Monster Calculator](https://monster-calculator.s3-ap-southeast-2.amazonaws.com/index.html)
