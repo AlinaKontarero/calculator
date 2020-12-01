@@ -4,7 +4,7 @@ Hi,
 
 Here is my solution for the Monster team. The calculator is also deployed on AWS S3 Bucket: [Monster Calculator](https://monster-calculator.s3-ap-southeast-2.amazonaws.com/index.html)
 
-I would be more than happy to get your feedback and to meet the engineering team in person. 
+I would be more than happy to get your feedback and meet the engineering team in person. 
 Please find my [Linkedin here](https://www.linkedin.com/in/alina-kontarero/).
 
 Kind regards, 
