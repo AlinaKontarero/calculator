@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button/Button';
 interface Props {
   onClick: (e: any) => void
 }
-class ButtonsPanel extends React.Component<Props, never> {
+class MainPanel extends React.Component<Props, never> {
     render() {
       const buttonsLabels = ['C', '+/-', '%', '/', '7', '8', '9', '*', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '=']
       const buttonsArr = buttonsLabels.map((_button, index) => {
@@ -39,4 +39,4 @@ class ButtonsPanel extends React.Component<Props, never> {
 }
 
 
-export default ButtonsPanel;
+export default MainPanel;

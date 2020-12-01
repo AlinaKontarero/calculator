@@ -21,7 +21,6 @@ const ScientificPanel = () => {
       }
     } 
     return (
-
       <div key={index}>
         <Tooltip title='Not available yet.' TransitionComponent={Zoom} arrow={true} placement={'top'}>
           <span>              
@@ -37,9 +36,8 @@ const ScientificPanel = () => {
           </span>
         </Tooltip>
       </div>
-              )
-  }
-  )
+    )
+  })
   
   return (
     <div className='grid-container scientific-panel'>
@@ -47,6 +45,5 @@ const ScientificPanel = () => {
     </div> 
   );
 }
-
 
 export default ScientificPanel;

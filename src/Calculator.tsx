@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { ThemeProvider } from '@material-ui/core/styles'
-import ResultPanel from './views/ResultPanel'
-import ButtonsPanel from './views/ButtonsPanel'
-import ScientificPanel from './views/ScientificPanel'
+import ResultPanel from './components/ResultPanel'
+import MainPanel from './components/MainPanel'
+import ScientificPanel from './components/ScientificPanel'
 import theme from './utils/theme'
 import './styles/global-styles.css'
 
@@ -137,7 +137,7 @@ class Calculator extends React.Component<{}, State> {
           <ResultPanel result={this.state.displayedResult} />
           <div className='grid-container calculator'>
             <ScientificPanel />
-            <ButtonsPanel onClick={this.handleCalculation} />
+            <MainPanel onClick={this.handleCalculation} />
           </div> 
         </div>
       </ThemeProvider>

@@ -54,7 +54,7 @@ html {
 
 .main-panel {
   cursor: pointer;
-  width: 262px;
+  width: 270px;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -63,10 +63,10 @@ html {
     display: none;
   }
   .result-panel {
-    max-width: 262px;
+    max-width: 270px;
   }
   .result {
     font-size: 40px;
-    max-width: 262px;
+    max-width: 270px;
   }
 }
